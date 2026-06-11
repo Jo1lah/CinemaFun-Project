@@ -1,0 +1,117 @@
+/* Заголовок страницы */
+
+main h2 {
+    text-align: center;
+
+    margin-bottom: 40px;
+
+    font-size: 40px;
+}
+
+
+/* Сетка с карточками */
+
+.admin-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(350px, 1fr));
+
+    gap: 25px;
+}
+
+
+/* Карточки */
+
+.admin-card {
+    background-color: #1f1f1f;
+
+    padding: 25px;
+
+    border-radius: 15px;
+
+    transition: 0.3s;
+}
+
+.admin-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 20px rgba(255, 111, 16, 0.15);
+}
+
+.admin-card h3 {
+    color: #ff6f10;
+
+    margin-bottom: 20px;
+}
+
+
+/* Поля ввода */
+
+.admin-card input {
+    width: 100%;
+
+    padding: 12px;
+
+    margin-bottom: 15px;
+
+    background-color: #111;
+
+    color: white;
+
+    border: 1px solid #333;
+
+    border-radius: 10px;
+}
+
+.admin-card input:focus {
+    outline: none;
+
+    border-color: #ff6f10;
+}
+
+
+/* Кнопки */
+
+.admin-card button {
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    background-color: #ff6f10;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.admin-card button:hover {
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 0 15px rgba(255, 111, 16, 0.3);
+}
+
+
+/* Адаптация под телефон */
+
+@media (max-width: 768px) {
+
+    main h2 {
+        font-size: 30px;
+    }
+
+    .admin-grid {
+        grid-template-columns: 1fr;
+    }
+
+}

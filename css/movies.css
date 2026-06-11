@@ -1,0 +1,125 @@
+/* Заголовок страницы */
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+
+/* Поиск фильма */
+
+#search {
+    width: 100%;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto 20px;
+    padding: 12px;
+    background-color: #1f1f1f;
+    color: white;
+    border: 1px solid #333;
+    border-radius: 8px;
+}
+
+#search:focus {
+    outline: none;
+    border-color: orange;
+}
+
+
+/* Кнопки фильтра */
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.filter-buttons button {
+    background-color: #1f1f1f;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-buttons button:hover {
+    background-color: orange;
+    color: black;
+}
+
+
+/* Список фильмов */
+
+#movies {
+    display: grid;
+    grid-template-columns:
+        repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+
+
+/* Карточка фильма */
+
+.movie-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 0 15px rgba(255, 165, 0, 0.3);
+}
+
+.movie-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.movie-card h3 {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    min-height: 60px;
+}
+
+.movie-card p {
+    text-align: center;
+    color: #ccc;
+    margin-bottom: 10px;
+}
+
+.movie-card button {
+    width: calc(100% - 20px);
+    margin: 10px;
+    border: none;
+    background-color: orange;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.movie-card button:hover {
+    opacity: 0.9;
+}
+
+
+/* Адаптация под телефон */
+
+@media (max-width: 768px) {
+
+    #movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}

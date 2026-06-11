@@ -1,0 +1,98 @@
+/* Страница фильма */
+
+#movie-info {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Карточка фильма */
+
+.movie-page {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+/* Постер фильма */
+
+.movie-page img {
+    width: 350px;
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow:
+        0 0 25px rgba(0, 0, 0, 0.5);
+}
+
+
+/* Информация о фильме */
+
+.movie-page h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+.movie-page p {
+    font-size: 18px;
+    color: #d0d0d0;
+    margin-bottom: 12px;
+}
+
+
+/* Описание фильма */
+
+.movie-summary {
+    margin-top: 25px;
+    line-height: 1.8;
+    color: #ccc;
+}
+
+
+/* Кнопка бронирования */
+
+.movie-page button {
+    margin-top: 30px;
+    background-color: #ff6f10;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.movie-page button:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 20px rgba(255, 111, 16, 0.4);
+}
+
+
+/* Адаптация под телефон */
+
+@media (max-width: 900px) {
+
+    .movie-page {
+        flex-direction: column;
+    }
+
+    .movie-page img {
+        width: 100%;
+
+        max-width: 400px;
+
+        margin: 0 auto;
+    }
+
+    .movie-page h2 {
+        font-size: 32px;
+    }
+
+}

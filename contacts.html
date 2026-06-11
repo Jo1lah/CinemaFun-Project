@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/contacts.css">
+</head>
+<body>
+
+<header>
+
+    <h1>
+    <a class="LOGO" href="index.html">
+        CinemaFun
+    </a>
+    </h1>
+    <button id="menu-btn">
+        ☰
+    </button>
+    <nav id="menu">
+        <a href="index.html">Главная</a>
+        <a href="movies.html">Афиша</a>
+        <a href="tickets.html">Мои билеты</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="admin.html">Админ</a>
+    </nav>
+
+</header>
+
+<main>
+
+    <section class="contacts-header">
+
+        <h2>Связаться с нами</h2>
+
+        <p>
+            Есть вопросы по билетам или сеансам?
+            Напишите нам.
+        </p>
+
+    </section>
+
+    <div class="contacts-layout">
+
+        <div class="contact-info">
+
+            <h3>Контактная информация</h3>
+
+            <p>📍 Алматы, пр. Абая 100</p>
+
+            <p>📞 +7 (777) 123-45-67</p>
+
+            <p>✉ info@cinemafun.kz</p>
+
+            <p>🕒 Ежедневно 09:00 – 23:00</p>
+
+        </div>
+
+        <form id="contact-form">
+
+            <input
+                type="text"
+                placeholder="Ваше имя"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Email"
+                required
+            >
+
+            <textarea
+                placeholder="Ваше сообщение"
+                rows="6"
+                required>
+            </textarea>
+
+            <button type="submit">
+                Отправить сообщение
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+
+<footer>
+    <p>© 2026 CinemaFun</p>
+</footer>
+
+<script src="js/contacts.js"></script>
+
+</body>
+</html>

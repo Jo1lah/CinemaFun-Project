@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Бронирование</title>
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+
+<header>
+    <a class="LOGO" href="index.html">
+        CinemaFun
+    </a>
+</header>
+
+<main class="booking-page">
+
+    <button class="back-btn" onclick="history.back()">
+        ← Назад
+    </button>
+
+    <div class="controls">
+
+        <select id="ticket-type">
+            <option value="regular">Обычный — 1500 ₸</option>
+            <option value="student">Студенческий — 1000 ₸</option>
+            <option value="pensioner">Пенсионный — 800 ₸</option>
+        </select>
+
+        <select id="movie-time">
+            <option>10:00</option>
+            <option>13:00</option>
+            <option>16:00</option>
+            <option selected>19:00</option>
+            <option>22:00</option>
+        </select>
+
+    </div>
+
+    <div class="screen">
+        ЭКРАН
+    </div>
+
+    <div id="hall"></div>
+
+    <div class="legend">
+
+        <div>
+            <span class="box free"></span>
+            Свободно
+        </div>
+
+        <div>
+            <span class="box selected"></span>
+            Выбрано
+        </div>
+
+        <div>
+            <span class="box occupied"></span>
+            Занято
+        </div>
+
+    </div>
+
+    <div class="info">
+
+        <h2>Информация</h2>
+
+        <p>Выбрано мест:
+            <span id="count">0</span>
+        </p>
+
+        <p>Стоимость:
+            <span id="price">0</span> ₸
+        </p>
+
+        <p>Места:</p>
+
+        <div id="selected-seats">
+            Нет
+        </div>
+
+        <button id="book-btn">
+            Забронировать
+        </button>
+
+    </div>
+
+</main>
+
+<script src="js/booking.js"></script>
+
+</body>
+</html>
